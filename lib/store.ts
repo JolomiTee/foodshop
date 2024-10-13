@@ -1,13 +1,13 @@
-import { create } from "zustand"
+import { create } from "zustand";
 
 interface SideBarDrawerStore {
-    isSideBarOpen: boolean
-    onSideBarOpen: () => void
-    onSideBarClose: () => void
+	isSideBarOpen: boolean;
+	onSideBarOpen: () => void;
+	onSideBarClose: () => void;
 }
 
 export const useSideBarDrawer = create<SideBarDrawerStore>()((set) => ({
-    isSideBarOpen: false,
-    onSideBarOpen: () =>  set({isSideBarOpen: true}),
-    onSideBarClose: () =>  set({isSideBarOpen: false})
-}))
+	isSideBarOpen: false,
+	onSideBarOpen: () => set({ isSideBarOpen: true }),
+	onSideBarClose: () => set({ isSideBarOpen: false }),
+}));

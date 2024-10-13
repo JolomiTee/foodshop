@@ -6,19 +6,16 @@ import HeroSection from "./components/Home/HeroSection";
 import MenuSection from "./components/Home/MenuSection";
 import Promos from "./components/Home/Promos";
 
-
 export default function Home() {
-  return (
-    <main className="">
-   
-      <Header/>
-      <SideBar/>
-      <HeroSection/>
-      <Promos/>
-    <Categories/>
-    <MenuSection/>
-    <Footer/>
-      
-    </main>
-  )
+	return (
+		<main className="">
+			<Header />
+			<SideBar />
+			<HeroSection />
+			<Promos />
+			<Categories />
+			<MenuSection />
+			<Footer />
+		</main>
+	);
 }
